@@ -60,8 +60,8 @@ while cap.isOpened():
 
                 if len(word_buffer) > 0:
                     word_display = ' '.join(word_buffer)
-                    cv2.putText(image, word_display, (50, 450), cv2.FONT_HERSHEY_SIMPLEX,
-                                1, (0, 255, 0), 2, cv2.LINE_AA)
+                    cv2.putText(image, word_display, (600, 300), cv2.FONT_HERSHEY_SIMPLEX,
+                                5, (0, 255, 0), 5, cv2.LINE_AA)
 
     cv2.imshow('Sign Language Detection', image)
 
